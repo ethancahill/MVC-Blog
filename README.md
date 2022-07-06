@@ -1,5 +1,7 @@
 # MVC Blog
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
+  <img width="1439" alt="Screen Shot 2022-07-06 at 6 44 08 PM" src="https://user-images.githubusercontent.com/99375366/177655531-f3e5e3ec-9e68-4bb3-96d1-472bfd74387b.png">
 
   ## Live Site
 
