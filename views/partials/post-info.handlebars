@@ -8,7 +8,11 @@
     {{user.username}}
     on
     {{format_date updated_at}}
+    |
+    <a href="/post/{{id}}">Add A Comment</a>
+    |
+     <a href="/dashboard/edit/{{id}}" class="edit-link">Edit post</a>
   </div>
+  
 
-  <a href="/dashboard/edit/{{id}}" class="edit-link">Edit post</a>
 </article>

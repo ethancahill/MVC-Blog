@@ -2,6 +2,8 @@
     {{#each posts as |post|}}
   <li>
     {{> post-info post }}
+    <h5>Comments:</h5>
+    {{> comments post.comments }}
   </li>
   {{/each}}
 </ul>

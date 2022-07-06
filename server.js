@@ -13,7 +13,6 @@ const sess = {
     secret: 'Super secret secret',
     cookie: {},
     resave: false,
-    expires: new Date(Date.now() + (60 * 60 * 1000)),
     saveUnitialized: true,
     store: new SequelizeStore({
         db: sequelize
