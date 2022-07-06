@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User, Post, Vote } = require("../../models");
+const { User, Post, Comment } = require("../../models");
 
 // GET /api/users
 router.get("/", (req, res) => {
@@ -18,6 +18,14 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   User.findOne({
     include: [
+      {
+        model: Comment,
+        attributes: ['id', 'comment_text', 'created_at'],
+        include: {
+          model: Post,
+          attributes: ['title']
+        }
+      },
       {
         model: Post,
         attributes: ["id", "title", "post_body", "created_at", "updated_at"],
