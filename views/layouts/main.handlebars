@@ -14,12 +14,12 @@
           <a href="/">MVC Blog</a>
         </h1>
         <nav>
-          
-          <a href="/dashboard">dashboard</a>
+       {{#if loggedIn}}
+          <a href="/dashboard">post new blog</a>
           <button id="logout" class="btn-no-style">logout</button>
-         
+          {{else}}
           <a href="/login">login</a>
-         
+          {{/if}}
         </nav>
       </header>
       <main>
@@ -30,9 +30,9 @@
       </footer>
     </div>
 
-   
+    {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
- 
+    {{/if}}
 
   </body>
 

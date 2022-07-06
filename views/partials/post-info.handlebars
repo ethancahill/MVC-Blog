@@ -1,0 +1,14 @@
+<article class="post">
+  <div class="title">
+    <h2> {{title}}</h2>
+    <p>{{post_body}}</p>
+  </div>
+  <div class="meta">
+    Written by
+    {{user.username}}
+    on
+    {{format_date updated_at}}
+  </div>
+
+  <a href="/dashboard/edit/{{id}}" class="edit-link">Edit post</a>
+</article>
